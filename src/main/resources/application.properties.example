@@ -1,0 +1,26 @@
+## you should rename it to `application.properties` and set your secrets
+
+spring.application.name=blogai
+
+
+# MySQL Database Configuration
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.datasource.url=<jdbc:mysql://localhost:3306/blogdb>
+spring.datasource.username=<user>
+spring.datasource.password=<pass>
+
+# Hibernate Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+# OpenAi Configurations
+spring.ai.openai.chat.model=gpt-3.5-turbo
+spring.ai.openai.api-key=<sk-proj-0000000000000000000000000000000000000>
+
+
+# Elk Configurations
+
+spring.elasticsearch.uris=<http://localhost:9200>
+spring.elasticsearch.username=elastic
+spring.elasticsearch.password=your_password
